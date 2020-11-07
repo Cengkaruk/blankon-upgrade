@@ -1,6 +1,7 @@
 blankon_upgrade_sources = [
   'main.vala',
   'window.vala',
+  'widgets/headerbar.vala',
 ]
 
 blankon_upgrade_deps = [

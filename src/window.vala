@@ -21,5 +21,15 @@ namespace BlankonUpgrade {
 		public Window (Gtk.Application app) {
 			Object (application: app);
 		}
+
+		construct {
+		    window_position = Gtk.WindowPosition.CENTER;
+		    set_default_size (600, 400);
+
+		    var headerbar = new BlankonUpgrade.HeaderBar ();
+		    set_titlebar (headerbar);
+
+		    show_all();
+		}
 	}
 }
