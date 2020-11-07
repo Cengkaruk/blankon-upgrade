@@ -37,6 +37,8 @@ This design document are created based on this (ticket)[https://github.com/Blank
 
 ### Upgrade
 
+![Upgrade Flow](docs/upgrade-flow.png?raw=true)
+
 * Booting
 * Upgrade Process
     * Application started as KIOSK mode
@@ -45,8 +47,6 @@ This design document are created based on this (ticket)[https://github.com/Blank
     * Show progress bar
     * Show collapsable verbose mode under the progress bar
 * Login Manager
-
-![Upgrade Flow](docs/upgrade-flow.png?raw=true)
 
 ## Wireframe
 
