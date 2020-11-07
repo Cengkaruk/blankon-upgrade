@@ -17,11 +17,7 @@
  */
 
 namespace BlankonUpgrade {
-	[GtkTemplate (ui = "/id/or/blankonlinux/upgrade/window.ui")]
 	public class Window : Gtk.ApplicationWindow {
-		[GtkChild]
-		Gtk.Label label;
-
 		public Window (Gtk.Application app) {
 			Object (application: app);
 		}
