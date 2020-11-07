@@ -1,0 +1,7 @@
+data/id.or.blankonlinux.upgrade.desktop.in
+data/id.or.blankonlinux.upgrade.appdata.xml.in
+data/id.or.blankonlinux.upgrade.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
+

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=blankon-upgrade
+Exec=blankon-upgrade
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="blankon-upgrade">
+	<schema id="id.or.blankonlinux.upgrade" path="/id/or/blankonlinux/upgrade/">
+	</schema>
+</schemalist>
