@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+# TODO: Implement standard CLI program using library of your choice
+# Based on `DESIGN.md` will be 2 main command
+# Call `scripts/check.sh` and `scripts/prepare.sh`

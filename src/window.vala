@@ -26,10 +26,26 @@ namespace BlankonUpgrade {
 		    window_position = Gtk.WindowPosition.CENTER;
 		    set_default_size (600, 400);
 
-		    var headerbar = new BlankonUpgrade.HeaderBar ();
-		    set_titlebar (headerbar);
+		    if (this._is_upgrade_state ()) {
+                fullscreen ();
+
+                var upgradeUI = new BlankonUpgrade.UpgradeUI ();
+                this.add (upgradeUI);
+		    } else {
+		        var headerbar = new BlankonUpgrade.HeaderBar ();
+		        set_titlebar (headerbar);
+
+                var AppUI = new BlankonUpgrade.AppUI ();
+                this.add (AppUI);
+		    }
 
 		    show_all();
+		}
+
+		private bool _is_upgrade_state () {
+		    // TODO: Create some "lock" mechanism to detect the upgrade state
+		    // when app started at booting up
+		    return true;
 		}
 	}
 }
