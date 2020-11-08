@@ -30,7 +30,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///home/cengkaruk/Projects/Github/blankon-upgrade"
+                    "url" : "https://github.com/Cengkaruk/blankon-upgrade.git"
                 }
             ]
         }
