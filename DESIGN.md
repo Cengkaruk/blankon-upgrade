@@ -8,6 +8,7 @@ This design document are created based on this (ticket)[https://github.com/Blank
 
 - Simple version of Ubuntu's upgrade tool
 - Distribute the binary using Flatpak and or AppImage
+- Can be run as CLI program
 
 ## States
 
@@ -46,8 +47,26 @@ This design document are created based on this (ticket)[https://github.com/Blank
     * Display the upgrade process information
     * Show progress bar
     * Show collapsable verbose mode under the progress bar
-* Login Manager
+* Reboot
 
 ## Wireframe
 
+## Architecture
 
+This tool should can be run as a CLI program or using the GUI for the users that are less used to operating in a terminal.
+The real upgrade state always run after reboot the system and in KIOSK mode.
+
+CLI and GUI mode are interface to the `scripts` for doing the jobs.
+
+### CLI
+
+* Release Check
+    * `blankon-upgrade-cli check` should return current release version, next release version, and are the new release available
+* Upgrade (Prepare and Download)
+    * `blankon-upgrade-cli upgrade` to run preparation and download the upgrades
+
+## References
+
+[0] https://wiki.debian.org/AutomatedUpgrade
+[1] https://wiki.koumbit.net/JessieUpgrade
+[2] https://dsa.debian.org/howto/upgrade-to-jessie
